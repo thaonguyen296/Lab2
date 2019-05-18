@@ -1,0 +1,29 @@
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+    TODO define vocabulary identification data
+    PUBLIC ID  : -//vendor//vocabulary//EN
+    SYSTEM ID  : http://server/path/__NAME__
+-->
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT BOOK (OPENER,SUBTITLE?,INTRODUCTION?,(SECTION|PART)+)>
+<!ELEMENT OPENER (TITLE_TEXT)*>
+<!ELEMENT TITLE_TEXT (#PCDATA)>
+<!ELEMENT SUBTITLE (#PCDATA)>
+<!ELEMENT INTRODUCTION (HEADER, p+)+>
+<!ELEMENT PART (HEADER, CHAPTER+)>
+<!ELEMENT SECTION (HEADER, p+)>
+<!ELEMENT HEADER (#PCDATA)>
+<!ELEMENT CHAPTER (CHAPTER_NUMBER, CHAPTER_TEXT)>
+<!ELEMENT CHAPTER_NUMBER (#PCDATA)>
+<!ELEMENT CHAPTER_TEXT (p)+>
+<!ATTLIST PART ID CDATA #REQUIRED>
+<!ENTITY GLAD "Glad you want to hear about me.">

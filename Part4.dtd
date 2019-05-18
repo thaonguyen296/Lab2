@@ -1,0 +1,7 @@
+<!ELEMENT FPTAptech (Student*)>
+<!ELEMENT Student (Name,Sex,Age)>
+<!ATTLIST Student Sex (Female|Male) "Female">
+<!ELEMENT Name (FName,LName)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT FName (#PCDATA)>
+<!ELEMENT LName (#PCDATA)>
